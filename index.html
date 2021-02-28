@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>Combava</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#">Combava</a>
+      <ul>
+        <li><a href="#events">Événements</a></li>
+        <li><a href="#inscription">Inscription</a></li>
+        <li><a href="#about">À propos</a></li>
+      </ul>
+    </nav>
+    <header>
+      <img src="./images/logoDavids.png" alt="logo" />
+      <h1>En exclusivité !</h1>
+    </header>
+    <main>
+      <section id="events">
+        <h2>Événements</h2>
+        <div>
+          <p>
+            Nous vous invitons à participer à des dégustations privées de
+            citronnade dans toute la France. La citronnade est une boisson
+            saine, mettant en avant le goût unique des différents agrumes frais
+            et bio de production locale. <br />
+            Une carte vous est proposée présentant les différents lieux de
+            rencontre. <br />
+            <br />
+            Rejoignez nous en vous inscrivant !
+          </p>
+          <img src="./images/lemonade1.jpg" alt="lemonade1" />
+        </div>
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1QqbMZqb_w7HZm87er7xQcaLzLE0rl4bA"
+          height="480"
+        ></iframe>
+      </section>
+      <section id="inscription">
+        <h2>Inscription</h2>
+        <form action="#">
+          <label for="nom">Nom</label>
+          <input id="nom" />
+
+          <label for="prenom">Prénom</label>
+          <input id="prenom" />
+
+          <label for="mail">Mail </label>
+          <input type="email" id="mail" />
+
+          <label for="telephone">Téléphone </label>
+          <input id="telephone" />
+
+          <label for="lieu">Choisir un événement </label>
+
+          <select id="lieu">
+            <option>Sélectionner</option>
+            <option>AMAP les Grand'Goules - 86000 Grand Poitiers</option>
+            <option>AMAP Bio des 2 rives - 37150 Civray-de-Touraine</option>
+            <option>Amap des Voiliers - 17000 La Rochelle</option>
+            <option>Le Pompin'Ambour - 33370 Pompignac</option>
+            <option>AMAP BIO’RILLAC - 15130 Arpajon-sur-Cère</option>
+            <option>AMAP - 63350 Maringues</option>
+            <option>Pensees Bio - 46130 Biars-sur-Cère</option>
+            <option>Bio & Sens Montpellier - 34990 Juvignac</option>
+            <option>Biossetan - 83330 Le Beausset</option>
+            <option>La Canopée - 25000 Besançon</option>
+            <option>Naturéo - 68124 Wintzenheim</option>
+            <option>Rayons Verts - 08000 Charleville-Mézières</option>
+            <option>BIOMONDE - 80000 Amiens</option>
+            <option>Bio c' Bon - 75013 Paris</option>
+            <option>Les Comptoirs de la Bio - 89000 Auxerre</option>
+          </select>
+          <span>
+            <input type="checkbox" id="consentement" />
+            <label for="consentement"
+              >Consentement pour recevoir des informations</label
+            >
+          </span>
+          <button>Valider</button>
+        </form>
+      </section>
+
+      <section id="about">
+        <h2>À propos</h2>
+        <div>
+          <img class="noImage" src="./images/lemonade2.jpg" alt="lemonade2" />
+          <div>
+            <p>
+              <b>Combava</b> est une association qui regroupe des producteurs
+              indépendants d'agrumes du sud de la France. Elle s'est inspirée de
+              la vente de citronnade sur des stands aux États-Unis afin de promouvoir les dégustations proposées.
+            </p>
+            <button>En savoir plus</button>
+          <img src="./images/lemonade3.jpg" alt="lemonade3" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-instagram-square"></i>
+    </footer>
+  </body>
+</html>

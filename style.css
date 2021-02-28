@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #424242;
+  scroll-behavior: smooth;
+}
+
+.noImage {
+  display: none;
+}
+
+/*MENU*/
+nav {
+  background: #fff;
+  height: 10vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul :not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav > a {
+  font-family: "Rock Salt", cursive;
+}
+
+nav ul li a {
+  cursor: default;
+  border-bottom-color: #fdd835;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  transition: border 0.25s;
+}
+
+nav ul li a:hover {
+  border-bottom-width: 4px;
+}
+
+header {
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header img {
+  height: 15rem;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Rock Salt", cursive;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+section:nth-child(2) {
+  background: #fdd835;
+  color: #fff;
+}
+
+section div img {
+  height: 13rem;
+  width: auto;
+}
+
+iframe {
+  width: 360px;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+}
+
+section form label {
+  font-size: 1.2rem;
+}
+
+section form button {
+  align-self: flex-end;
+}
+
+footer {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #424242;
+}
+
+footer i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .noImage {
+    display: flex;
+  }
+
+  nav {
+    font-size: 1.5rem;
+  }
+
+  header img {
+    height: 20rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  section div {
+    flex-direction: initial;
+    padding: 0 1rem 2rem 1rem;
+    justify-content: space-evenly;
+  }
+
+  section div p {
+    width: 50%;
+  }
+
+  iframe {
+    width: 640px;
+  }
+}
